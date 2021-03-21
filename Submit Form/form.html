@@ -1,0 +1,76 @@
+<html>
+<body>
+    <h3>Profile Form</h3>
+<form name="profile" onsubmit="return validateProfile()" method = "post">
+    <table>
+    <tr>
+        <td>First Name</td>
+        <td><input type="text" name="firstName" id ="firstName">
+          <span id="fnameError" class ="alert"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><input type="text" name ="lastName" id = "lastName">
+          <span id = "lnameError" class ="alert"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>Address 1</td>
+        <td><input type="text"name="firstAddress"id ="firstAddress" >
+          <span id="addressError" class ="alert"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>Address 2</td>
+        <td><input type="text"name="secondAddress" id="secondAddress">
+    </tr>
+    <tr>
+        <td>City</td>
+        <td><input type="text"name="city1" id ="city1">
+          <span id="cityError" class ="alert"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>Province</td>
+        <td>
+            <select name ="province1" id="province1">
+            <option value="">Select Province</option>
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="MB">Manitoba</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NL">Newfoundland and Labrador</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="ON">Ontario</option>
+            <option value="PE">Prince Edward Island</option>
+            <option value="QC">Quebec</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="NT">Northwest Territories</option>
+            <option value="NU">Nunavut</option>
+            <option value="YT">Yukon</option>
+            </select>
+            <span id="provinceError" class ="alert"></span>
+        </td>
+    </tr>
+        <tr>
+        <td>Country</td>
+        <td>
+            <select name="country1" id="country1">
+            <option value="">Select Country</option>
+            <option value="CA">Canada</option>
+            <option value="US">United States</option>
+            <option value="OTH">Other</option>
+            </select>
+            <span id="countryError" class ="alert"></span>
+            </td>
+    </tr>
+    </table>
+      <button type="submit">Submit</button>
+      <button type="button" id= "resetBtn">Reset</button>
+</form>
+<script src="scripts/validate.js"></script>
+<script src="scripts/events.js"></script>
+<link href="scripts/val.css" rel="stylesheet" type="text/css">
+</body>
+</html>
